@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Gentium+Book+Plus:ital@1&family=Playfair+Display:ital@1&family=Roboto:ital,wght@1,500&family=Splash&family=The+Nautigal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Finlandica:ital@1&family=Gentium+Book+Plus:ital@1&family=Playfair+Display:ital@1&family=Roboto:ital,wght@1,500&family=Splash&family=The+Nautigal:wght@700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+nav
+{
+    background: linear-gradient(45deg, rgb(37, 27, 77), rgb(79, 61, 142),rgb(130, 111, 199));
+    color: white;
+    height: 65px;
+    font-size: 33px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'The Nautigal', cursive;
+}
+nav ul
+{
+    list-style-type: none;
+}
+.gamecontainer
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows:repeat(3,10vw);
+    font-family: 'Roboto',sans-serif;
+    position: relative;
+    color: whitesmoke;
+    background-color:rgb(69, 58, 118);
+}
+.box
+{
+    border: 2px solid white;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover
+{
+    background-color: rgb(80, 68, 123);
+}
+.info 
+{
+    font-size: 22px;
+}
+.gameinfo
+{
+    padding: 0 34px;
+    font-family: 'Finlandica', sans-serif;
+}
+.gameinfo h1 
+{
+    font-size: 2.5rem;
+}
+.imgbox img
+{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br-0
+{
+    border-right: 0;
+}
+.bl-0
+{
+    border-left: 0;
+}
+.bt-0
+{
+    border-top: 0;
+}
+.bb-0
+{
+    border-bottom: 0;
+}
+#reset
+{
+    border: 2px solid rgb(39, 39, 106);
+    color: rgb(59, 41, 124);
+    margin: 0 23px;
+    padding: 1px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    box-shadow: 0 0 2px rgb(60, 60, 123);
+}
+#reset:hover
+{
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: #3f367e;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.line
+{
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color:white;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width:800px)
+{
+    .gamecontainer
+    {
+        flex-wrap: wrap;
+        padding-top: 1px;
+        margin-top: 3px;
+    }
+    .gameinfo
+    {
+        margin-top: 34px;
+    }
+    .gameinfo h1 
+    {
+        font-size: 1.5rem;
+    }
+    .container
+    {
+        display: grid;
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+}
